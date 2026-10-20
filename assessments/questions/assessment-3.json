@@ -1,0 +1,31 @@
+{
+  "questions": [
+    {
+      "id": "coding-only-1",
+      "type": "coding",
+      "section": "Coding",
+      "question": "Coding Question 1",
+      "platform": "Add platform name",
+      "link": "",
+      "problemStatement": "Open the linked problem, solve it on your chosen platform, and continue to the next question after submission."
+    },
+    {
+      "id": "coding-only-2",
+      "type": "coding",
+      "section": "Coding",
+      "question": "Coding Question 2",
+      "platform": "Add platform name",
+      "link": "",
+      "problemStatement": "Open the linked problem, solve it on your chosen platform, and continue to the next question after submission."
+    },
+    {
+      "id": "coding-only-3",
+      "type": "coding",
+      "section": "Coding",
+      "question": "Coding Question 3",
+      "platform": "Add platform name",
+      "link": "",
+      "problemStatement": "Open the linked problem, solve it on your chosen platform, and continue to the next question after submission."
+    }
+  ]
+}

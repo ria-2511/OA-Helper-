@@ -11,7 +11,7 @@ function AssessmentSelector({ assessments, selectedAssessmentId, onSelect, disab
               assessment.assessmentId === selectedAssessmentId ? 'selected' : ''
             }`}
             onClick={() => onSelect(assessment.assessmentId)}
-            disabled={disabled}
+            disabled={disabled || assessment.assessmentId === selectedAssessmentId}
           >
             <span className="assessment-card__title">{assessment.title}</span>
             <span className="assessment-card__meta">

@@ -1,44 +1,17 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import AssessmentSelector from './components/AssessmentSelector'
 import QuestionPanel from './components/QuestionPanel'
 import ResultsSummary from './components/ResultsSummary'
 import { assessments, defaultAssessment } from './data/assessments'
 import './App.css'
 
-const STORAGE_KEY = 'oa-helper-progress'
-
-const getSavedProgress = () => {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    return raw ? JSON.parse(raw) : null
-  } catch {
-    return null
-  }
-}
-
 function App() {
-  const savedProgress = getSavedProgress()
-
   const [selectedAssessmentId, setSelectedAssessmentId] = useState(
-    savedProgress?.selectedAssessmentId ??
-      defaultAssessment?.assessmentId ??
-      assessments[0]?.assessmentId ??
-      '',
+    defaultAssessment?.assessmentId ?? assessments[0]?.assessmentId ?? '',
   )
-  const [currentIndex, setCurrentIndex] = useState(savedProgress?.currentIndex ?? 0)
-  const [selectedAnswers, setSelectedAnswers] = useState(savedProgress?.selectedAnswers ?? {})
-  const [isSubmitted, setIsSubmitted] = useState(savedProgress?.isSubmitted ?? false)
-
-  useEffect(() => {
-    const progress = {
-      selectedAssessmentId,
-      currentIndex,
-      selectedAnswers,
-      isSubmitted,
-    }
-
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress))
-  }, [selectedAssessmentId, currentIndex, selectedAnswers, isSubmitted])
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [selectedAnswers, setSelectedAnswers] = useState({})
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const assessment = useMemo(
     () => assessments.find((item) => item.assessmentId === selectedAssessmentId) ?? defaultAssessment,
@@ -65,6 +38,8 @@ function App() {
     }, {})
   }, [questions])
 
+  const currentSection = currentQuestion?.section || sections[0] || 'General'
+
   const navigateToAssessment = (assessmentId) => {
     setSelectedAssessmentId(assessmentId)
     setCurrentIndex(0)
@@ -88,8 +63,15 @@ function App() {
     setIsSubmitted(true)
   }
 
+  const handleSectionSelect = (sectionName) => {
+    const firstIndex = questions.findIndex((question) => (question.section || 'General') === sectionName)
+
+    if (firstIndex >= 0) {
+      setCurrentIndex(firstIndex)
+    }
+  }
+
   const resetProgress = () => {
-    localStorage.removeItem(STORAGE_KEY)
     setSelectedAssessmentId(defaultAssessment?.assessmentId ?? assessments[0]?.assessmentId ?? '')
     setCurrentIndex(0)
     setSelectedAnswers({})
@@ -122,7 +104,7 @@ function App() {
         assessments={assessments}
         selectedAssessmentId={selectedAssessmentId}
         onSelect={navigateToAssessment}
-        disabled={true}
+        disabled={false}
       />
 
       <div className="assessment-body">
@@ -131,10 +113,15 @@ function App() {
           {assessment.isSectionBased && sections.length > 0 ? (
             <div className="section-list">
               {sections.map((section) => (
-                <div key={section} className="section-pill">
+                <button
+                  key={section}
+                  type="button"
+                  className={`section-pill ${currentSection === section ? 'active' : ''}`}
+                  onClick={() => handleSectionSelect(section)}
+                >
                   <span>{section}</span>
                   <strong>{sectionMap[section]?.length ?? 0}</strong>
-                </div>
+                </button>
               ))}
             </div>
           ) : (

@@ -1,0 +1,32 @@
+{
+  "answers": {
+    "oops-1": "A",
+    "oops-2": "D",
+    "oops-3": "A",
+    "oops-4": "C",
+    "oops-5": "B",
+    "dbms-1": "B",
+    "dbms-2": "C",
+    "dbms-3": "B",
+    "dbms-4": "D",
+    "dbms-5": "C",
+    "os-1": "C",
+    "os-2": "D",
+    "os-3": "C",
+    "os-4": "B",
+    "os-5": "B",
+    "coding-mcq-1": "C",
+    "coding-mcq-2": "A",
+    "coding-mcq-3": "B",
+    "coding-mcq-4": "A",
+    "coding-mcq-5": "A"
+  },
+  "explanations": {
+    "oops-1": { "explanation": "Base class constructors execute before derived class constructors, so the output is A followed by B." },
+    "oops-5": { "explanation": "Because show() is virtual in Base and overridden in Derived, the derived implementation is called at runtime." },
+    "dbms-3": { "explanation": "3NF removes transitive dependency, which means non-key columns should not depend on other non-key columns." },
+    "os-2": { "explanation": "Deadlock requires mutual exclusion, hold and wait, no preemption, and circular wait." },
+    "coding-mcq-1": { "explanation": "The expression a++ evaluates to the old value 5, then ++a makes a equal to 6, so the printed values are 5 and 7 in the same statement." },
+    "coding-mcq-3": { "explanation": "In C, main must return an int value. The statement return; is invalid because it has no value." }
+  }
+}

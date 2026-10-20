@@ -1,0 +1,9 @@
+{
+  "assessmentId": "assessment-3",
+  "title": "Assessment 3",
+  "description": "A coding-only assessment with 3 platform-based problems. Add each coding link before starting the test.",
+  "assessmentType": "coding",
+  "durationMinutes": 90,
+  "isSectionBased": false,
+  "sections": []
+}

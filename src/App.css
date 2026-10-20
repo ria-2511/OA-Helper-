@@ -124,11 +124,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   padding: 10px 12px;
+  border: 1px solid transparent;
   border-radius: 10px;
   background: #f8f7ff;
   color: #39275d;
   font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.section-pill:hover {
+  border-color: #c4b5fd;
+  transform: translateY(-1px);
+}
+
+.section-pill.active {
+  background: #ede9fe;
+  border-color: #8b5cf6;
+  color: #4c1d95;
 }
 
 .summary-box {

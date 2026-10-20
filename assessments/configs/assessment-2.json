@@ -1,0 +1,14 @@
+{
+  "assessmentId": "assessment-2",
+  "title": "Assessment 2",
+  "description": "A medium-difficulty MCQ set focused on OOPs & C++, DBMS, OS, and coding MCQs for campus placement prep.",
+  "assessmentType": "mcq",
+  "durationMinutes": 60,
+  "isSectionBased": true,
+  "sections": [
+    "OOPs & C++",
+    "DBMS",
+    "OS",
+    "Coding MCQ"
+  ]
+}

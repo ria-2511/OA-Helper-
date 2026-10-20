@@ -1,0 +1,223 @@
+{
+  "questions": [
+    {
+      "id": "oops-1",
+      "type": "mcq",
+      "section": "OOPs & C++",
+      "question": "What will be the output of the following C++ code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class A {\npublic:\n    A() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n};\nint main() {\n    B obj;\n    return 0;\n}"
+      },
+      "options": ["AB", "BA", "A", "Compile error"],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "oops-2",
+      "type": "mcq",
+      "section": "OOPs & C++",
+      "question": "Which of these is a correct way to declare a virtual function in C++?",
+      "options": [
+        "virtual void show();",
+        "void virtual show();",
+        "virtual void show() const;",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "oops-3",
+      "type": "mcq",
+      "section": "OOPs & C++",
+      "question": "Identify the error in the following code.",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Base {\npublic:\n    int x;\n};\nclass Derived : public Base {\npublic:\n    void setX(int value) { x = value; }\n};\nint main() {\n    Derived d;\n    d.setX(5);\n    return 0;\n}"
+      },
+      "options": [
+        "No error; x is inherited and accessible",
+        "Error because x is private",
+        "Error because x is static",
+        "Error because Derived cannot access x"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "oops-4",
+      "type": "mcq",
+      "section": "OOPs & C++",
+      "question": "Which access specifier allows members to be accessed in derived classes but not outside the class hierarchy?",
+      "options": ["public", "private", "protected", "friend"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "oops-5",
+      "type": "mcq",
+      "section": "OOPs & C++",
+      "question": "What is the output of the following code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\nint main() {\n    Base *ptr = new Derived();\n    ptr->show();\n    return 0;\n}"
+      },
+      "options": ["Base", "Derived", "Compile error", "Runtime error"],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "dbms-1",
+      "type": "mcq",
+      "section": "DBMS",
+      "question": "Which key uniquely identifies a row in a table?",
+      "options": ["Foreign key", "Primary key", "Alternate key", "Composite key"],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "dbms-2",
+      "type": "mcq",
+      "section": "DBMS",
+      "question": "Which SQL statement is used to permanently save all changes made in the current transaction?",
+      "options": ["ROLLBACK", "SAVEPOINT", "COMMIT", "DELETE"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "dbms-3",
+      "type": "mcq",
+      "section": "DBMS",
+      "question": "A table is in 3NF if it is in 2NF and has no ______ dependencies.",
+      "options": ["partial", "transitive", "functional", "domain"],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "dbms-4",
+      "type": "mcq",
+      "section": "DBMS",
+      "question": "Which join returns only the matching rows from both tables?",
+      "options": ["LEFT JOIN", "RIGHT JOIN", "FULL JOIN", "INNER JOIN"],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "dbms-5",
+      "type": "mcq",
+      "section": "DBMS",
+      "question": "Which SQL clause is used to eliminate duplicate rows from the result set?",
+      "options": ["WHERE", "GROUP BY", "DISTINCT", "HAVING"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "os-1",
+      "type": "mcq",
+      "section": "OS",
+      "question": "Which process state indicates that the process is waiting for an I/O operation to finish?",
+      "options": ["Running", "Ready", "Blocked", "New"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "os-2",
+      "type": "mcq",
+      "section": "OS",
+      "question": "Which of the following is required for deadlock to occur?",
+      "options": [
+        "Mutual exclusion",
+        "Circular wait",
+        "Hold and wait",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "os-3",
+      "type": "mcq",
+      "section": "OS",
+      "question": "Which CPU scheduling algorithm is preemptive and gives each process a fixed time slice?",
+      "options": ["FCFS", "SJF", "Round Robin", "Priority Scheduling"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "os-4",
+      "type": "mcq",
+      "section": "OS",
+      "question": "Paging divides memory into ______ blocks.",
+      "options": ["variable-sized", "fixed-sized", "stack-sized", "logical"],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "os-5",
+      "type": "mcq",
+      "section": "OS",
+      "question": "Which of the following is the best description of a semaphore?",
+      "options": [
+        "A hardware register",
+        "A synchronization primitive used to control access to shared resources",
+        "A file system command",
+        "A process scheduling policy"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-1",
+      "type": "mcq",
+      "section": "Coding MCQ",
+      "question": "What will be the output of the following C code?",
+      "codeSnippet": {
+        "language": "c",
+        "code": "#include <stdio.h>\nint main() {\n    int a = 5;\n    printf(\"%d %d\\n\", a++, ++a);\n    return 0;\n}"
+      },
+      "options": ["5 6", "5 7", "6 7", "6 6"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "coding-mcq-2",
+      "type": "mcq",
+      "section": "Coding MCQ",
+      "question": "Which code snippet correctly checks whether a number is prime?",
+      "options": [
+        "bool isPrime(int n) { if (n < 2) return false; for (int i = 2; i * i <= n; i++) { if (n % i == 0) return false; } return true; }",
+        "bool isPrime(int n) { if (n <= 1) return false; for (int i = 2; i < n; i++) { if (n % i == 0) return true; } return false; }",
+        "bool isPrime(int n) { if (n < 2) return true; for (int i = 1; i <= n; i++) { if (n % i == 0) return false; } return true; }",
+        "bool isPrime(int n) { for (int i = 2; i <= n; i++) { if (n % i == 0) return false; } return true; }"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-mcq-3",
+      "type": "mcq",
+      "section": "Coding MCQ",
+      "question": "Identify the error in the following C code.",
+      "codeSnippet": {
+        "language": "c",
+        "code": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\\n\", x);\n    return;\n}"
+      },
+      "options": [
+        "The format string is wrong",
+        "The return statement inside main is invalid",
+        "The variable x is not declared",
+        "There is no error"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-4",
+      "type": "mcq",
+      "section": "Coding MCQ",
+      "question": "Which of the following correctly swaps two integers using a temporary variable?",
+      "options": [
+        "int temp = a; a = b; b = temp;",
+        "a = b; b = a;",
+        "int temp = b; a = b; b = temp;",
+        "swap(a, b);"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-mcq-5",
+      "type": "mcq",
+      "section": "Coding MCQ",
+      "question": "What is the output of the following C program?",
+      "codeSnippet": {
+        "language": "c",
+        "code": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 3; i++) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}"
+      },
+      "options": ["1 2 3", "1 2 3 ", "0 1 2", "1 2 3 4"],
+      "correctAnswer": "A"
+    }
+  ]
+}
