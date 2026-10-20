@@ -163,7 +163,8 @@ function App() {
           <div className="summary-box">
             <h4>Progress</h4>
             <p>
-              {Object.keys(confirmedAnswers).length} answered / {questions.length} total
+              {Object.keys(confirmedAnswers).length} answered /{" "}
+              {questions.length} total
             </p>
             <button
               type="button"
