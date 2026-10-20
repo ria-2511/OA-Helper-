@@ -1,0 +1,303 @@
+{
+  "questions": [
+    {
+      "id": "apt-1",
+      "type": "mcq",
+      "section": "Aptitude",
+      "question": "If a train travels 120 km in 2 hours, what is its average speed?",
+      "options": ["40 km/h", "50 km/h", "60 km/h", "80 km/h"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "apt-2",
+      "type": "mcq",
+      "section": "Aptitude",
+      "question": "The sum of the ages of A and B is 48. If A is 6 years older than B, what is B's age?",
+      "options": ["18", "21", "24", "27"],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "apt-3",
+      "type": "mcq",
+      "section": "Aptitude",
+      "question": "A shop gives a 20% discount on an item marked ₹500. What is the selling price?",
+      "options": ["₹400", "₹420", "₹450", "₹480"],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "apt-4",
+      "type": "mcq",
+      "section": "Aptitude",
+      "question": "A car covers 300 km in 5 hours and then 180 km in 3 hours. What is the average speed for the whole journey?",
+      "options": ["48 km/h", "52 km/h", "60 km/h", "70 km/h"],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ai-1",
+      "type": "mcq",
+      "section": "AI",
+      "question": "Which of the following is the main goal of supervised learning?",
+      "options": [
+        "Finding hidden patterns in unlabeled data",
+        "Learning from labeled examples to predict outcomes",
+        "Optimizing CPU scheduling",
+        "Reducing database complexity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ai-2",
+      "type": "mcq",
+      "section": "AI",
+      "question": "What does overfitting usually mean in ML?",
+      "options": [
+        "Model performs badly on both train and test data",
+        "Model memorizes training data and fails to generalize",
+        "Model is too simple to learn from data",
+        "Model uses too little memory"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "ai-3",
+      "type": "mcq",
+      "section": "AI",
+      "question": "Which of the following is most suitable for classification problems?",
+      "options": ["Decision Tree", "Linear Regression", "K-Means", "PCA"],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "ai-4",
+      "type": "mcq",
+      "section": "AI",
+      "question": "Which AI concept is used when a model learns from reward and punishment signals?",
+      "options": ["Supervised learning", "Reinforcement learning", "Clustering", "Normalization"],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "oops-1",
+      "type": "mcq",
+      "section": "OOPs",
+      "question": "Which keyword is used to create a subclass from a base class in C++?",
+      "options": ["implements", "extends", ":", "inherits"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "oops-2",
+      "type": "mcq",
+      "section": "OOPs",
+      "question": "Which of the following is the correct way to make a method polymorphic in C++?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};"
+      },
+      "options": [
+        "Use a virtual function in the base class",
+        "Make the method static",
+        "Use a constructor instead",
+        "Use inline keyword"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "oops-3",
+      "type": "mcq",
+      "section": "OOPs",
+      "question": "Which access specifier allows members to be accessed only within the class and friends?",
+      "options": ["public", "private", "protected", "friend"],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "oops-4",
+      "type": "mcq",
+      "section": "OOPs",
+      "question": "Which OOP concept is best described as hiding implementation details and exposing only necessary methods?",
+      "options": ["Inheritance", "Abstraction", "Encapsulation", "Polymorphism"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "dbms-1",
+      "type": "mcq",
+      "section": "DBMS",
+      "question": "Which key uniquely identifies each row in a table?",
+      "options": ["Foreign key", "Candidate key", "Primary key", "Alternate key"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "dbms-2",
+      "type": "mcq",
+      "section": "DBMS",
+      "question": "Which SQL command is used to remove all rows from a table without deleting the table itself?",
+      "options": ["DELETE TABLE", "DROP TABLE", "TRUNCATE TABLE", "REMOVE TABLE"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "dbms-3",
+      "type": "mcq",
+      "section": "DBMS",
+      "question": "Which normalization form removes transitive dependency?",
+      "options": ["1NF", "2NF", "3NF", "BCNF"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "dbms-4",
+      "type": "mcq",
+      "section": "DBMS",
+      "question": "Which join returns all rows from both tables, matching where possible?",
+      "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "os-1",
+      "type": "mcq",
+      "section": "OS",
+      "question": "Which scheduling algorithm executes processes in the order they arrive?",
+      "options": ["Round Robin", "Priority Scheduling", "First Come First Serve", "Shortest Job First"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "os-2",
+      "type": "mcq",
+      "section": "OS",
+      "question": "Which condition is required for deadlock to occur?",
+      "options": ["Mutual exclusion", "No preemption", "Hold and wait", "All of the above"],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "os-3",
+      "type": "mcq",
+      "section": "OS",
+      "question": "Which memory management technique divides memory into fixed-size blocks?",
+      "options": ["Paging", "Segmentation", "Virtual memory", "Cache memory"],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "os-4",
+      "type": "mcq",
+      "section": "OS",
+      "question": "Which of the following is the process state when it is waiting for an I/O operation to complete?",
+      "options": ["Running", "Ready", "Blocked", "Terminated"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "coding-mcq-1",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "What is the output of the following C++ code?",
+      "options": [
+        {
+          "language": "cpp",
+          "code": "int a = 5;\ncout << a++ << ++a;"
+        },
+        {
+          "language": "cpp",
+          "code": "int a = 5;\ncout << ++a << a++;"
+        },
+        {
+          "language": "cpp",
+          "code": "int a = 5;\ncout << a++ << a++;"
+        },
+        {
+          "language": "cpp",
+          "code": "int a = 5;\ncout << ++a << ++a;"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-mcq-2",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which code snippet correctly checks whether a number is prime?",
+      "options": [
+        {
+          "language": "cpp",
+          "code": "bool isPrime(int n) {\n  if (n < 2) return false;\n  for (int i = 2; i * i <= n; i++) {\n    if (n % i == 0) return false;\n  }\n  return true;\n}"
+        },
+        {
+          "language": "cpp",
+          "code": "bool isPrime(int n) {\n  if (n < 2) return true;\n  for (int i = 1; i <= n; i++) {\n    if (n % i == 0) return false;\n  }\n  return true;\n}"
+        },
+        {
+          "language": "cpp",
+          "code": "bool isPrime(int n) {\n  if (n <= 1) return false;\n  for (int i = 2; i < n; i++) {\n    if (n % i == 0) return true;\n  }\n  return false;\n}"
+        },
+        {
+          "language": "cpp",
+          "code": "bool isPrime(int n) {\n  for (int i = 2; i <= n; i++) {\n    if (n % i == 0) return false;\n  }\n  return true;\n}"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-mcq-3",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Identify the error in the following C code.",
+      "options": [
+        {
+          "language": "c",
+          "code": "int main() {\n  int x = 5;\n  printf(\"%d\\n\", x);\n  return 0;\n}"
+        },
+        {
+          "language": "c",
+          "code": "int main() {\n  int x = 5;\n  printf(\"%d\\n\", x)\n  return 0;\n}"
+        },
+        {
+          "language": "c",
+          "code": "int main() {\n  int x = 5;\n  print(x);\n  return 0;\n}"
+        },
+        {
+          "language": "c",
+          "code": "int main() {\n  int x = 5;\n  printf(\"%d\\n\", x);\n  return;\n}"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-4",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which option correctly swaps two integers using a temporary variable?",
+      "options": [
+        {
+          "language": "cpp",
+          "code": "int temp = a;\na = b;\nb = temp;"
+        },
+        {
+          "language": "cpp",
+          "code": "a = b;\nb = a;"
+        },
+        {
+          "language": "cpp",
+          "code": "int temp = b;\na = b;\nb = temp;"
+        },
+        {
+          "language": "cpp",
+          "code": "swap(a, b);"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-1",
+      "type": "coding",
+      "section": "Coding",
+      "question": "Two Sum",
+      "description": "Add your platform link later. Solve this common interview problem on your preferred site.",
+      "platform": "Add later",
+      "link": "",
+      "problemStatement": "Given an array of integers and a target value, return the indices of the two numbers such that they add up to the target."
+    },
+    {
+      "id": "coding-2",
+      "type": "coding",
+      "section": "Coding",
+      "question": "Reverse a String",
+      "description": "Add your platform link later. This is a classic beginner problem for strings and arrays.",
+      "platform": "Add later",
+      "link": "",
+      "problemStatement": "Write a function that reverses a string without using built-in reverse functions, and print the reversed result."
+    }
+  ]
+}

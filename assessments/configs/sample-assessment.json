@@ -1,0 +1,16 @@
+{
+  "assessmentId": "sample-assessment",
+  "title": "Fresher Core Prep Test",
+  "description": "A practical mix of aptitude, AI, OOPs, DBMS, OS, and C/C++ coding MCQs for campus placement preparation.",
+  "assessmentType": "mixed",
+  "durationMinutes": 90,
+  "isSectionBased": true,
+  "sections": [
+    "Aptitude",
+    "AI",
+    "OOPs",
+    "DBMS",
+    "OS",
+    "Coding MCQ"
+  ]
+}

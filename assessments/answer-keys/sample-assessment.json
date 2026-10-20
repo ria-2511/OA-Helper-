@@ -1,0 +1,51 @@
+{
+  "answers": {
+    "apt-1": "C",
+    "apt-2": "B",
+    "apt-3": "A",
+    "apt-4": "B",
+    "ai-1": "B",
+    "ai-2": "B",
+    "ai-3": "A",
+    "ai-4": "B",
+    "oops-1": "C",
+    "oops-2": "A",
+    "oops-3": "B",
+    "oops-4": "C",
+    "dbms-1": "C",
+    "dbms-2": "C",
+    "dbms-3": "C",
+    "dbms-4": "D",
+    "os-1": "C",
+    "os-2": "D",
+    "os-3": "A",
+    "os-4": "C",
+    "coding-mcq-1": "A",
+    "coding-mcq-2": "A",
+    "coding-mcq-3": "B",
+    "coding-mcq-4": "A"
+  },
+  "explanations": {
+    "apt-2": {
+      "explanation": "Let B = x, then A = x + 6. So x + x + 6 = 48 => 2x = 42 => x = 21."
+    },
+    "ai-2": {
+      "explanation": "Overfitting happens when the model fits the training data too closely and struggles to generalize to new data."
+    },
+    "oops-2": {
+      "explanation": "Using a virtual function in the base class allows runtime polymorphism through base-class pointers or references."
+    },
+    "dbms-3": {
+      "explanation": "Third normal form removes transitive dependencies, meaning non-key attributes should not depend on other non-key attributes."
+    },
+    "os-2": {
+      "explanation": "Deadlock requires mutual exclusion, hold and wait, no preemption, and circular wait."
+    },
+    "coding-mcq-1": {
+      "explanation": "In C++, a++ prints the old value 5, then ++a increments a to 6 and prints the new value 7, so the output is 57."
+    },
+    "coding-mcq-3": {
+      "explanation": "The call to printf is missing a semicolon after the function call, which makes the code invalid C syntax."
+    }
+  }
+}
