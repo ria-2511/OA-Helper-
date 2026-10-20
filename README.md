@@ -112,9 +112,13 @@ Yes — GitHub Pages supports static React apps, including Vite builds. The impo
 2. publish the generated `dist` directory to GitHub Pages or configure a GitHub Actions workflow
 3. keep the `base: './'` setting in `vite.config.js` so relative links work correctly on the hosted page
 
+The GitHub Pages source should be set to GitHub Actions for this project, because the browser-ready app lives in the generated `dist` folder.
+
 If you want a repo-based GitHub Pages setup, the recommended path is:
 
 - feature branch with the app source, and
 - deploy the `dist` output to the `gh-pages` branch or via GitHub Actions
 
 This project is intentionally frontend-only and does not require a backend.
+
+> Trigger note: this small README update is only for validating the GitHub Pages workflow.
