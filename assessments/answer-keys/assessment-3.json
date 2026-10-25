@@ -1,4 +1,46 @@
 {
-  "answers": {},
-  "explanations": {}
+  "answers": {
+    "coding-mcq-1": "C",
+    "coding-mcq-2": "A",
+    "coding-mcq-3": "B",
+    "coding-mcq-4": "B",
+    "coding-mcq-5": "A",
+    "coding-mcq-6": "B",
+    "coding-mcq-7": "A",
+    "coding-mcq-8": "B",
+    "coding-mcq-9": "A",
+    "coding-mcq-10": "C",
+    "coding-mcq-11": "C",
+    "coding-mcq-12": "C",
+    "coding-mcq-13": "D",
+    "coding-mcq-14": "B",
+    "coding-mcq-15": "A",
+    "coding-mcq-16": "B",
+    "coding-mcq-17": "B",
+    "coding-mcq-18": "A",
+    "coding-mcq-19": "B",
+    "coding-mcq-20": "A"
+  },
+  "explanations": {
+    "coding-mcq-1": { "explanation": "Base class constructors execute before derived class constructors, so the output sequence is AB." },
+    "coding-mcq-2": { "explanation": "A pure virtual function is declared with = 0 to make the class abstract." },
+    "coding-mcq-3": { "explanation": "Because show() is virtual and overridden in Derived, runtime polymorphism calls the derived version." },
+    "coding-mcq-4": { "explanation": "private members are accessible only within the class and friends." },
+    "coding-mcq-5": { "explanation": "The constructor initializes x to 10, and the object prints that value." },
+    "coding-mcq-6": { "explanation": "The final keyword prevents further inheritance of the class." },
+    "coding-mcq-7": { "explanation": "Function overloading is based on different parameter lists; the same name can be reused for different signatures." },
+    "coding-mcq-8": { "explanation": "Constructors are used to initialize an object when it is created." },
+    "coding-mcq-9": { "explanation": "A virtual member function is declared with the virtual keyword before the return type." },
+    "coding-mcq-10": { "explanation": "The static count increments for each object created, so two objects lead to a count of 2." },
+    "coding-mcq-11": { "explanation": "A process waiting for I/O is in the blocked state." },
+    "coding-mcq-12": { "explanation": "Round Robin gives each process a fixed time slice or quantum." },
+    "coding-mcq-13": { "explanation": "Deadlock requires mutual exclusion, hold and wait, no preemption, and circular wait." },
+    "coding-mcq-14": { "explanation": "Paging divides memory into fixed-size blocks called pages." },
+    "coding-mcq-15": { "explanation": "Semaphores are mainly used to synchronize access to shared resources." },
+    "coding-mcq-16": { "explanation": "SJF picks the next job with the shortest burst time." },
+    "coding-mcq-17": { "explanation": "Round Robin is a classic preemptive scheduling algorithm because it interrupts after the time quantum." },
+    "coding-mcq-18": { "explanation": "A page table maps logical pages to physical frames in virtual memory." },
+    "coding-mcq-19": { "explanation": "The ready state means the process is waiting for CPU time to run." },
+    "coding-mcq-20": { "explanation": "A race condition happens when multiple processes access shared data concurrently without proper synchronization." }
+  }
 }

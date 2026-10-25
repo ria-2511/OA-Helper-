@@ -1,12 +1,9 @@
 {
   "assessmentId": "assessment-4",
   "title": "Assessment 4",
-  "description": "A focused 45-minute quiz covering OOPs in C++ and OS coding MCQs.",
+  "description": "A 15-question coding MCQ practice test focused on modern C++, systems, memory, and OS concepts.",
   "assessmentType": "mcq",
   "durationMinutes": 45,
-  "isSectionBased": true,
-  "sections": [
-    "OOPs in C++",
-    "OS"
-  ]
+  "isSectionBased": false,
+  "sections": []
 }

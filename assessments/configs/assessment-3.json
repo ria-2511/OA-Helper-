@@ -1,9 +1,9 @@
 {
   "assessmentId": "assessment-3",
   "title": "Assessment 3",
-  "description": "A coding-only assessment with 3 platform-based problems. Add each coding link before starting the test.",
-  "assessmentType": "coding",
-  "durationMinutes": 90,
+  "description": "A 20-question coding MCQ test focused on C++ OOPs and operating system concepts for a 45-minute practice round.",
+  "assessmentType": "mcq",
+  "durationMinutes": 45,
   "isSectionBased": false,
   "sections": []
 }

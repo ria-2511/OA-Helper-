@@ -1,9 +1,0 @@
-{
-  "assessmentId": "assessment-5",
-  "title": "Assessment 5",
-  "description": "A 20-question coding MCQ test focused on C++ OOPs and operating system concepts for a 45-minute practice round.",
-  "assessmentType": "mcq",
-  "durationMinutes": 45,
-  "isSectionBased": false,
-  "sections": []
-}

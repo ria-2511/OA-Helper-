@@ -1,31 +1,344 @@
 {
   "questions": [
     {
-      "id": "coding-only-1",
-      "type": "coding",
-      "section": "Coding",
-      "question": "Coding Question 1",
-      "platform": "Add platform name",
-      "link": "",
-      "problemStatement": "Open the linked problem, solve it on your chosen platform, and continue to the next question after submission."
+      "id": "coding-mcq-1",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "What is the output of the following C++ code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n};\nint main() { B obj; }"
+      },
+      "options": [
+        { "language": "cpp", "code": "A" },
+        { "language": "cpp", "code": "B" },
+        { "language": "cpp", "code": "AB" },
+        { "language": "cpp", "code": "BA" }
+      ],
+      "correctAnswer": "C"
     },
     {
-      "id": "coding-only-2",
-      "type": "coding",
-      "section": "Coding",
-      "question": "Coding Question 2",
-      "platform": "Add platform name",
-      "link": "",
-      "problemStatement": "Open the linked problem, solve it on your chosen platform, and continue to the next question after submission."
+      "id": "coding-mcq-2",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which of the following is a correct pure virtual function declaration in C++?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Base {\npublic:\n    virtual void show() = 0;\n};"
+      },
+      "options": [
+        { "language": "cpp", "code": "virtual void show() = 0;" },
+        { "language": "cpp", "code": "void show() = 0;" },
+        { "language": "cpp", "code": "virtual show() = 0;" },
+        { "language": "cpp", "code": "void virtual show();" }
+      ],
+      "correctAnswer": "A"
     },
     {
-      "id": "coding-only-3",
-      "type": "coding",
-      "section": "Coding",
-      "question": "Coding Question 3",
-      "platform": "Add platform name",
-      "link": "",
-      "problemStatement": "Open the linked problem, solve it on your chosen platform, and continue to the next question after submission."
+      "id": "coding-mcq-3",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "What is the output of this C++ code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\nint main() { Base *ptr = new Derived(); ptr->show(); }"
+      },
+      "options": [
+        { "language": "cpp", "code": "Base" },
+        { "language": "cpp", "code": "Derived" },
+        { "language": "cpp", "code": "Compile error" },
+        { "language": "cpp", "code": "Runtime error" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-4",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which access specifier allows members to be accessed only within the same class and friends?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Example {\nprivate:\n    int x;\n};"
+      },
+      "options": [
+        { "language": "cpp", "code": "public" },
+        { "language": "cpp", "code": "private" },
+        { "language": "cpp", "code": "protected" },
+        { "language": "cpp", "code": "friend" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-5",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "What is the output of this C++ code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "#include <iostream>\nusing namespace std;\nclass Test {\npublic:\n    int x;\n    Test(int a) : x(a) {}\n};\nint main() { Test t(10); cout << t.x; }"
+      },
+      "options": [
+        { "language": "cpp", "code": "10" },
+        { "language": "cpp", "code": "0" },
+        { "language": "cpp", "code": "Garbage value" },
+        { "language": "cpp", "code": "Compile error" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-mcq-6",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which keyword prevents a class from being inherited in C++?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Vehicle final {\npublic:\n    void drive() {}\n};"
+      },
+      "options": [
+        { "language": "cpp", "code": "virtual" },
+        { "language": "cpp", "code": "final" },
+        { "language": "cpp", "code": "static" },
+        { "language": "cpp", "code": "const" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-7",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which of the following is a correct example of function overloading?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "int add(int a, int b) { return a + b; }\ndouble add(double a, double b) { return a + b; }"
+      },
+      "options": [
+        { "language": "cpp", "code": "int add(int a, int b); double add(double a, double b);" },
+        { "language": "cpp", "code": "int add(int a, int b); int add(int a, int b) { return a + b; }" },
+        { "language": "cpp", "code": "int add(int a, int b); void add(int a, int b);" },
+        { "language": "cpp", "code": "double add(int a, int b);" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-mcq-8",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which of these statements about constructors is true?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Car {\npublic:\n    Car() { cout << \"created\"; }\n};"
+      },
+      "options": [
+        { "language": "cpp", "code": "Constructors destroy objects" },
+        { "language": "cpp", "code": "Constructors initialize objects" },
+        { "language": "cpp", "code": "Constructors are static methods" },
+        { "language": "cpp", "code": "Constructors return a value" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-9",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which of the following is the correct way to declare a member function as virtual?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Base {\npublic:\n    virtual void display();\n};"
+      },
+      "options": [
+        { "language": "cpp", "code": "virtual void display();" },
+        { "language": "cpp", "code": "void virtual display();" },
+        { "language": "cpp", "code": "virtual display();" },
+        { "language": "cpp", "code": "void display() virtual;" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-mcq-10",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "What is the output of the following C++ code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "#include <iostream>\nusing namespace std;\nclass Box {\npublic:\n    static int count;\n    Box() { count++; }\n};\nint Box::count = 0;\nint main() { Box b1, b2; cout << Box::count; }"
+      },
+      "options": [
+        { "language": "cpp", "code": "0" },
+        { "language": "cpp", "code": "1" },
+        { "language": "cpp", "code": "2" },
+        { "language": "cpp", "code": "3" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "coding-mcq-11",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which process state indicates that the process is waiting for an I/O operation to finish?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Running -> Ready -> Blocked -> Ready"
+      },
+      "options": [
+        { "language": "text", "code": "Running" },
+        { "language": "text", "code": "Ready" },
+        { "language": "text", "code": "Blocked" },
+        { "language": "text", "code": "Terminated" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "coding-mcq-12",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which CPU scheduling algorithm gives each process a fixed time quantum?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Process A -> 3 units\nProcess B -> 3 units\nProcess C -> 3 units"
+      },
+      "options": [
+        { "language": "text", "code": "FCFS" },
+        { "language": "text", "code": "SJF" },
+        { "language": "text", "code": "Round Robin" },
+        { "language": "text", "code": "Priority Scheduling" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "coding-mcq-13",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which of the following is a necessary condition for deadlock?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "P1 holds R1 and waits for R2\nP2 holds R2 and waits for R1"
+      },
+      "options": [
+        { "language": "text", "code": "Mutual exclusion" },
+        { "language": "text", "code": "Circular wait" },
+        { "language": "text", "code": "Hold and wait" },
+        { "language": "text", "code": "All of the above" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "coding-mcq-14",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Paging divides memory into:",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Page 1 | Page 2 | Page 3 | Page 4"
+      },
+      "options": [
+        { "language": "text", "code": "Variable-sized blocks" },
+        { "language": "text", "code": "Fixed-sized blocks" },
+        { "language": "text", "code": "Stack-sized blocks" },
+        { "language": "text", "code": "Logical segments" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-15",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "A semaphore is mainly used for:",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Shared resource access"
+      },
+      "options": [
+        { "language": "text", "code": "Process synchronization" },
+        { "language": "text", "code": "Compiler optimization" },
+        { "language": "text", "code": "Disk partitioning" },
+        { "language": "text", "code": "Stack management" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-mcq-16",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which scheduling algorithm selects the process with the minimum burst time next?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Job lengths: 4, 2, 3, 1"
+      },
+      "options": [
+        { "language": "text", "code": "FCFS" },
+        { "language": "text", "code": "SJF" },
+        { "language": "text", "code": "Round Robin" },
+        { "language": "text", "code": "Priority Scheduling" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-17",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which of the following is an example of a preemptive scheduling algorithm?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Each process gets a time slice before moving to the next one"
+      },
+      "options": [
+        { "language": "text", "code": "FCFS" },
+        { "language": "text", "code": "Round Robin" },
+        { "language": "text", "code": "SJF without preemption" },
+        { "language": "text", "code": "Priority non-preemptive" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-18",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "What is the purpose of a page table in virtual memory?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Logical address -> physical frame"
+      },
+      "options": [
+        { "language": "text", "code": "To map logical pages to physical frames" },
+        { "language": "text", "code": "To store CPU instructions" },
+        { "language": "text", "code": "To save file metadata" },
+        { "language": "text", "code": "To manage keyboard input" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "coding-mcq-19",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which state is a process in when it is ready to run but waiting for CPU time?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Ready queue"
+      },
+      "options": [
+        { "language": "text", "code": "Blocked" },
+        { "language": "text", "code": "Ready" },
+        { "language": "text", "code": "New" },
+        { "language": "text", "code": "Terminated" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "coding-mcq-20",
+      "type": "coding-mcq",
+      "section": "Coding MCQ",
+      "question": "Which of the following is the best description of a race condition?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Two processes access the same shared variable concurrently"
+      },
+      "options": [
+        { "language": "text", "code": "A timing problem due to concurrent access to shared data" },
+        { "language": "text", "code": "A page replacement policy" },
+        { "language": "text", "code": "A disk scheduling method" },
+        { "language": "text", "code": "A stack overflow bug" }
+      ],
+      "correctAnswer": "A"
     }
   ]
 }
