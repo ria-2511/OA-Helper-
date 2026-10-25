@@ -1,0 +1,76 @@
+{
+  "companyId": "nvidia",
+  "name": "Nvidia",
+  "tagline": "GPU and AI computing company powering graphics, accelerated computing, and modern AI systems.",
+  "overview": "NVIDIA is a global technology company known for graphics processing units (GPUs), AI platforms, and accelerated computing. It works across gaming, data centers, autonomous systems, robotics, and AI infrastructure. For placements, NVIDIA is often associated with strong analytical thinking, DSA practice, systems-level reasoning, and solid fundamentals in C++, OS, and problem solving.",
+  "highlights": [
+    "Focuses on AI, GPU, systems, and high-performance computing",
+    "Often expects strong DSA and problem-solving ability",
+    "Better fit for students with strong fundamentals in C++, OS, and systems thinking"
+  ],
+  "targetTopics": [
+    "Core DSA: arrays, strings, linked lists, trees, hash maps, sliding window, two pointers, recurrence relations",
+    "Bit manipulation and bitwise reasoning: shifting, masking, toggling, and handling bitwise recurrence patterns",
+    "Graph and DP-style patterns: topological sort, shortest path, prefix-suffix sums, and 2D prefix sum techniques",
+    "Systems and MCQ fundamentals: OS, process/thread scheduling, context switching, deadlocks, virtual memory, and race conditions",
+    "Computer architecture: cache hierarchy, memory latency, instruction cycles, ALU operations, and microprocessor basics",
+    "C/C++ low-level skills: pointer arithmetic, memory leaks, dynamic allocation, memcpy implementation, and output prediction",
+    "Language concepts: struct vs class, inheritance, polymorphism, preprocessor behavior, and compiler optimization trade-offs",
+    "Quant aptitude and logic: permutations, combinations, probability, time and work, number series, and basic reasoning puzzles",
+    "Concurrency and optimization: multithreading, mutexes, semaphores, space-time complexity, and performance-aware coding"
+  ],
+  "links": [
+    {
+      "label": "NVIDIA OA / online assessment",
+      "url": "https://www.lodely.com/companies/nvidia/online-assessment"
+    },
+    {
+      "label": "NVIDIA OA Hackerrank questions",
+      "url": "https://interviewfox.ai/interview-questions/nvidia-oa-hackerrank-questions/"
+    },
+    {
+      "label": "NVIDIA previous year coding questions",
+      "url": "https://www.lets-code.co.in/previousyearcodingquestion/nvidia-previous-year-coding-questions/"
+    },
+    {
+      "label": "NVIDIA OA discussion thread",
+      "url": "https://leetcode.com/discuss/post/4837287/nvidia-oa-questions-by-anonymous_user-7s7n/"
+    },
+    {
+      "label": "Sample NVIDIA OA practice",
+      "url": "https://www.oahelper.in/mock-oa/nvidia"
+    },
+    {
+      "label": "NVIDIA Hackerrank OA deep dive",
+      "url": "https://oavoservice.com/en/articles/nvidia-hackerrank-oa-frequent-problem-types-deep-dive"
+    }
+  ],
+  "notes": [
+    "NVIDIA OA problems often combine DSA fundamentals with low-level systems thinking and code writing speed.",
+    "Practice a mix of array patterns, pointer logic, bit manipulation, and OS-level reasoning before the interview."
+  ],
+  "sections": [
+    {
+      "heading": "Recently asked questions",
+      "content": "NVIDIA frequently asks DSA problems involving bitwise patterns, tree traversal, arrays, linked lists, and strong coding-under-pressure reasoning. In addition, low-level C/C++ questions and conceptual OS or memory-based MCQs are common in interviews and OA rounds."
+    }
+  ],
+  "questions": [
+    {
+      "question": "What are the most reported DSA problems in NVIDIA OA rounds?",
+      "answer": "Bitwise recurrence, maximizing greatness of an array, binary tree traversal with stack, string optimization, and kth node from the end of a linked list are frequently reported."
+    },
+    {
+      "question": "What low-level systems topics are often tested in NVIDIA interviews?",
+      "answer": "Pointer arithmetic, memcpy implementation, bit toggling, 32-bit multiplication via 16-bit ALU constraints, and C/C++ memory model concepts such as volatile, restrict, and register are common."
+    },
+    {
+      "question": "What conceptual MCQs commonly appear in NVIDIA rounds?",
+      "answer": "Questions around CPU context switches, C++ struct vs class differences, cache hierarchy, CUDA warp size, and how compiler optimization changes code behavior are often seen."
+    },
+    {
+      "question": "How do I handle the logic puzzle-style questions?",
+      "answer": "Think step by step, stay calm, and map the problem to a simple invariant or state transition. The water jug puzzle is a classic example where the logic is simple once you simulate the moves correctly."
+    }
+  ]
+}

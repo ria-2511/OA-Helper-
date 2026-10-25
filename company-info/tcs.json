@@ -1,0 +1,67 @@
+{
+  "companyId": "tcs",
+  "name": "TCS",
+  "tagline": "Global IT services, consulting, and business solutions company.",
+  "overview": "TCS is one of India’s largest IT services companies. It is known for its large campus hiring programs, coding assessments, and structured interview rounds.",
+  "highlights": [
+    "Strong campus hiring culture with aptitude and coding rounds",
+    "Focus on communication, core CS fundamentals, and problem-solving",
+    "Frequently asks practical questions on DBMS, OOPs, OS, and basics of programming"
+  ],
+  "targetTopics": [
+    "Aptitude and logical reasoning",
+    "DBMS basics and SQL queries",
+    "OOPs concepts in Java or C++",
+    "Operating systems fundamentals",
+    "Basic coding and output-based questions"
+  ],
+  "links": [
+    {
+      "label": "TCS Careers",
+      "url": "https://www.tcs.com/careers"
+    },
+    {
+      "label": "NQT Page",
+      "url": "https://www.tcs.com/what-we-do/industries"
+    }
+  ],
+  "prepLinks": [
+    {
+      "label": "DBMS Revision Notes",
+      "url": "https://www.geeksforgeeks.org/dbms/"
+    },
+    {
+      "label": "OOPs Concepts",
+      "url": "https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/"
+    },
+    {
+      "label": "Operating System Notes",
+      "url": "https://www.geeksforgeeks.org/operating-systems/"
+    }
+  ],
+  "notes": [
+    "Practice a few aptitude mocks before interviews to improve speed and confidence.",
+    "Keep your answers structured and simple in technical and HR rounds.",
+    "Review common output-based questions, especially around loops, pointers, inheritance, and SQL joins."
+  ],
+  "sections": [
+    {
+      "heading": "Common interview pattern",
+      "content": "Typical TCS hiring process includes an aptitude or NQT test, communication screening, technical interview, and HR round. Students are often expected to be comfortable with coding concepts, logical reasoning, and basics of OOPs and DBMS."
+    },
+    {
+      "heading": "How to prepare",
+      "content": "Focus on core CS fundamentals, basic programming, communication, and coding confidence. Practice aptitude questions, basic output-based questions, and common interview answers using a simple and clear structure."
+    }
+  ],
+  "questions": [
+    {
+      "question": "What are the most important topics for TCS preparation?",
+      "answer": "Aptitude, logical reasoning, DBMS, OOPs, OS, and basic programming fundamentals are the most common areas."
+    },
+    {
+      "question": "How should I prepare for the communication round?",
+      "answer": "Practice self-introduction, strengths, hobbies, academic projects, and basic HR questions with confident and concise answers."
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import CodeSnippetMcqOptions from './CodeSnippetMcqOptions'
+import CodeSnippetMcqOptions from "./CodeSnippetMcqOptions";
 
 function QuestionPanel({
   question,
@@ -13,17 +13,21 @@ function QuestionPanel({
   isLast,
 }) {
   if (!question) {
-    return null
+    return null;
   }
 
-  const options = Array.isArray(question.options) ? question.options : []
-  const codeSnippet = question.codeSnippet ?? question.snippet ?? question.code ?? null
+  const options = Array.isArray(question.options) ? question.options : [];
+  const codeSnippet =
+    question.codeSnippet ?? question.snippet ?? question.code ?? null;
   const formattedCodeSnippet =
-    typeof codeSnippet === 'string'
-      ? { language: 'javascript', code: codeSnippet }
-      : codeSnippet && typeof codeSnippet === 'object'
-        ? { language: codeSnippet.language ?? 'javascript', code: codeSnippet.code ?? codeSnippet.text ?? '' }
-        : null
+    typeof codeSnippet === "string"
+      ? { language: "javascript", code: codeSnippet }
+      : codeSnippet && typeof codeSnippet === "object"
+        ? {
+            language: codeSnippet.language ?? "javascript",
+            code: codeSnippet.code ?? codeSnippet.text ?? "",
+          }
+        : null;
 
   return (
     <section className="question-panel">
@@ -31,17 +35,23 @@ function QuestionPanel({
         <span className="question-index">
           Question {questionNumber} / {totalQuestions}
         </span>
-        <span className="question-type">{question.type?.toUpperCase() || 'QUESTION'}</span>
+        <span className="question-type">
+          {question.type?.toUpperCase() || "QUESTION"}
+        </span>
       </div>
 
       <h2>{question.question || question.prompt}</h2>
 
-      {question.description && <p className="question-description">{question.description}</p>}
+      {question.description && (
+        <p className="question-description">{question.description}</p>
+      )}
 
       {formattedCodeSnippet?.code && (
         <div className="question-code-block">
           {formattedCodeSnippet.language && (
-            <span className="code-option__language">{formattedCodeSnippet.language}</span>
+            <span className="code-option__language">
+              {formattedCodeSnippet.language}
+            </span>
           )}
           <pre className="code-option__snippet">
             <code>{formattedCodeSnippet.code}</code>
@@ -49,16 +59,16 @@ function QuestionPanel({
         </div>
       )}
 
-      {question.type === 'mcq' ? (
+      {question.type === "mcq" ? (
         <div className="options-list">
           {options.map((option, index) => {
-            const optionLabel = String.fromCharCode(65 + index)
-            const isSelected = selectedAnswer === optionLabel
+            const optionLabel = String.fromCharCode(65 + index);
+            const isSelected = selectedAnswer === optionLabel;
 
             return (
               <label
                 key={`${question.id}-${optionLabel}`}
-                className={`option-item ${isSelected ? 'selected' : ''}`}
+                className={`option-item ${isSelected ? "selected" : ""}`}
               >
                 <input
                   type="radio"
@@ -70,10 +80,10 @@ function QuestionPanel({
                 <span className="option-label">{optionLabel}</span>
                 <span>{option}</span>
               </label>
-            )
+            );
           })}
         </div>
-      ) : question.type === 'coding-mcq' ? (
+      ) : question.type === "coding-mcq" ? (
         <CodeSnippetMcqOptions
           questionId={question.id}
           options={options}
@@ -83,14 +93,20 @@ function QuestionPanel({
       ) : (
         <div className="coding-card">
           <p>
-            Solve this problem on your chosen platform and then continue with the next question.
+            Solve this problem on your chosen platform and then continue with
+            the next question.
           </p>
           {question.platform && (
             <div className="coding-platform">Platform: {question.platform}</div>
           )}
           {question.link && (
-            <a href={question.link} target="_blank" rel="noreferrer" className="coding-link">
-              Open {question.platform || 'coding question'}
+            <a
+              href={question.link}
+              target="_blank"
+              rel="noreferrer"
+              className="coding-link"
+            >
+              Open {question.platform || "coding question"}
             </a>
           )}
           {question.problemStatement && (
@@ -101,7 +117,11 @@ function QuestionPanel({
 
       <div className="question-actions">
         {!isFirst && (
-          <button type="button" className="secondary-button" onClick={onPrevious}>
+          <button
+            type="button"
+            className="secondary-button"
+            onClick={onPrevious}
+          >
             Previous
           </button>
         )}
@@ -117,7 +137,7 @@ function QuestionPanel({
         )}
       </div>
     </section>
-  )
+  );
 }
 
-export default QuestionPanel
+export default QuestionPanel;

@@ -69,14 +69,15 @@ Before finalizing a quiz, confirm these details with the user:
 9. Should there be answer explanations after submission?
 10. Should the quiz be section-based or a single continuous list?
 11. Are the question difficulty and topic mix already decided?
-12. Does the user want a beginner/medium/hard level set?
-13. Are there any topic constraints or exclusions?
+12. What is the difficulty level for each section being added? (for example: OOPs = medium, OS = easy, DBMS = hard)
+13. Does the user want a beginner/medium/hard level set?
+14. Are there any topic constraints or exclusions?
 
 ## Authoring workflow
 
 When creating a new quiz, do the following in order:
 
-1. Ask the user the checklist questions above.
+1. Ask the user the checklist questions above, including the per-section difficulty level.
 2. Create the config JSON.
 3. Create the questions JSON.
 4. Create the answer-key JSON.

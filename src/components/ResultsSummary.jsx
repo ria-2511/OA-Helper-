@@ -1,17 +1,23 @@
-function ResultsSummary({ assessment, questions, selectedAnswers, answerKey, answerExplanations }) {
+function ResultsSummary({
+  assessment,
+  questions,
+  selectedAnswers,
+  answerKey,
+  answerExplanations,
+}) {
   if (!assessment) {
-    return null
+    return null;
   }
 
   const mcqQuestions = questions.filter(
-    (question) => question.type === 'mcq' || question.type === 'coding-mcq',
-  )
-  const totalMcqs = mcqQuestions.length
+    (question) => question.type === "mcq" || question.type === "coding-mcq",
+  );
+  const totalMcqs = mcqQuestions.length;
   const score = mcqQuestions.reduce((count, question) => {
-    const selected = selectedAnswers[question.id]
-    const correctAnswer = answerKey?.[question.id]
-    return selected && selected === correctAnswer ? count + 1 : count
-  }, 0)
+    const selected = selectedAnswers[question.id];
+    const correctAnswer = answerKey?.[question.id];
+    return selected && selected === correctAnswer ? count + 1 : count;
+  }, 0);
 
   return (
     <section className="results-summary">
@@ -25,11 +31,13 @@ function ResultsSummary({ assessment, questions, selectedAnswers, answerKey, ans
       <div className="result-grid">
         <div>
           <h3>Attempted questions</h3>
-          <p>{Object.keys(selectedAnswers).length} / {questions.length}</p>
+          <p>
+            {Object.keys(selectedAnswers).length} / {questions.length}
+          </p>
         </div>
         <div>
           <h3>Assessment type</h3>
-          <p>{assessment.assessmentType || 'Mixed'}</p>
+          <p>{assessment.assessmentType || "Mixed"}</p>
         </div>
         <div>
           <h3>Time limit</h3>
@@ -39,19 +47,24 @@ function ResultsSummary({ assessment, questions, selectedAnswers, answerKey, ans
 
       <div className="answer-review">
         {mcqQuestions.map((question) => {
-          const selected = selectedAnswers[question.id]
-          const correct = answerKey?.[question.id]
-          const isCorrect = selected && selected === correct
-          const explanation = answerExplanations?.[question.id]?.explanation || answerExplanations?.[question.id]
+          const selected = selectedAnswers[question.id];
+          const correct = answerKey?.[question.id];
+          const isCorrect = selected && selected === correct;
+          const explanation =
+            answerExplanations?.[question.id]?.explanation ||
+            answerExplanations?.[question.id];
 
           return (
-            <div key={question.id} className={`review-item ${isCorrect ? 'correct' : 'incorrect'}`}>
+            <div
+              key={question.id}
+              className={`review-item ${isCorrect ? "correct" : "incorrect"}`}
+            >
               <span>{question.question || question.prompt}</span>
               <p>
-                Your answer: <strong>{selected || 'Not answered'}</strong>
+                Your answer: <strong>{selected || "Not answered"}</strong>
               </p>
               <p>
-                Correct answer: <strong>{correct || 'Not available'}</strong>
+                Correct answer: <strong>{correct || "Not available"}</strong>
               </p>
 
               {!isCorrect && explanation && (
@@ -61,15 +74,16 @@ function ResultsSummary({ assessment, questions, selectedAnswers, answerKey, ans
                 </div>
               )}
             </div>
-          )
+          );
         })}
       </div>
 
       <div className="coding-review-note">
-        Coding questions are intentionally linked out so you can solve them on your platform of choice.
+        Coding questions are intentionally linked out so you can solve them on
+        your platform of choice.
       </div>
     </section>
-  )
+  );
 }
 
-export default ResultsSummary
+export default ResultsSummary;

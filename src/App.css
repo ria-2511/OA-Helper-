@@ -4,6 +4,32 @@
   padding: 32px 0 56px;
 }
 
+.view-switcher {
+  display: inline-flex;
+  gap: 10px;
+  padding: 8px;
+  background: #f5f3ff;
+  border: 1px solid #e5d8ff;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+
+.view-tab {
+  border: none;
+  background: transparent;
+  color: #4e5569;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.view-tab.active {
+  background: white;
+  color: #4c1d95;
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.12);
+}
+
 .app-header {
   display: flex;
   align-items: end;
@@ -170,6 +196,119 @@
 
 .main-panel {
   padding: 20px;
+}
+
+.company-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 24px;
+}
+
+.company-sidebar,
+.company-panel {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e7eaf3;
+  border-radius: 22px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.04);
+}
+
+.company-sidebar {
+  padding: 20px;
+}
+
+.company-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.company-menu-item {
+  width: 100%;
+  border: 1px solid transparent;
+  background: #f8f7ff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 700;
+  color: #2d3750;
+  cursor: pointer;
+}
+
+.company-menu-item.active {
+  background: #ede9fe;
+  border-color: #8b5cf6;
+  color: #4c1d95;
+}
+
+.company-panel {
+  padding: 24px;
+}
+
+.company-infopage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.company-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+}
+
+.company-tagline {
+  margin: 10px 0 0;
+  color: #4f5d75;
+  font-size: 1.06rem;
+}
+
+.company-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.company-section h2,
+.company-header .eyebrow {
+  margin: 0;
+}
+
+.company-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #2d3750;
+}
+
+.company-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.company-link {
+  display: inline-flex;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #dbeafe;
+  color: #0f172a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.company-card {
+  border: 1px solid #dfe3ec;
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: #fafbff;
+}
+
+.company-card h3 {
+  margin: 0 0 8px;
+}
+
+.company-card p {
+  margin: 0;
+  color: #2d3750;
 }
 
 .assessment-description {

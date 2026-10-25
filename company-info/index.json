@@ -1,0 +1,16 @@
+[
+  {
+    "companyId": "tcs",
+    "name": "TCS",
+    "tagline": "Global IT services, consulting, and business solutions company.",
+    "overview": "TCS is one of India’s largest IT services companies. It is known for its large campus hiring programs, coding assessments, and structured interview rounds.",
+    "url": "company-info/tcs.json"
+  },
+  {
+    "companyId": "nvidia",
+    "name": "Nvidia",
+    "tagline": "GPU and AI computing company powering graphics, accelerated computing, and modern AI systems.",
+    "overview": "NVIDIA is a global technology company known for graphics processing units (GPUs), AI platforms, and accelerated computing. It works across gaming, data centers, autonomous systems, robotics, and AI infrastructure. For placements, NVIDIA is often associated with strong analytical thinking, DSA practice, systems-level reasoning, and solid fundamentals in C++, OS, and problem solving.",
+    "url": "company-info/nvidia.json"
+  }
+]

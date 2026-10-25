@@ -14,9 +14,40 @@ A GitHub Pages-friendly React app for mock online assessments. It supports:
 - `assessments/configs/` - configuration files for each assessment
 - `assessments/questions/` - question files for each assessment
 - `assessments/answer-keys/` - answer key files mapped by assessment name
+- `company-info/` - company profile/blog-style data in JSON
 - `src/components/` - reusable app components
 - `src/data/` - dataset loader
-- `src/App.jsx` - main assessment UI
+- `src/App.jsx` - main app shell with assessment and company views
+
+## Add a company info page
+
+1. Create a new JSON file in `company-info/` using the company name or ID.
+2. Add the company summary entry to `company-info/index.json`.
+3. Keep `companyId`, file name, and `name` consistent.
+4. Use the structure below for placement-prep content.
+
+```json
+{
+  "companyId": "infosys",
+  "name": "Infosys",
+  "tagline": "A global leader in consulting and technology services.",
+  "overview": "Short company overview.",
+  "highlights": ["Strong campus hiring", "Core CS fundamentals matter"],
+  "links": [{ "label": "Careers", "url": "https://example.com" }],
+  "sections": [
+    {
+      "heading": "Interview pattern",
+      "content": "Describe the hiring process here."
+    }
+  ],
+  "questions": [
+    {
+      "question": "What should I prepare?",
+      "answer": "Focus on aptitude, DBMS, OOPs, OS, and communication."
+    }
+  ]
+}
+```
 
 ## Add a new assessment
 
