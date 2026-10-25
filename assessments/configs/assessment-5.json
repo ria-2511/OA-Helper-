@@ -1,0 +1,9 @@
+{
+  "assessmentId": "assessment-5",
+  "title": "Assessment 5",
+  "description": "A 20-question hard MCQ assessment mixing OOPs, DSA-based coding MCQs, coding theory, and a few Python-focused coding questions.",
+  "assessmentType": "mcq",
+  "durationMinutes": 60,
+  "isSectionBased": false,
+  "sections": []
+}

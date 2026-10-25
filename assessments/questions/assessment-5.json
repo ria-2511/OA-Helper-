@@ -1,0 +1,327 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "coding-mcq",
+      "section": "General",
+      "question": "What is the output of the following Python code?",
+      "codeSnippet": {
+        "language": "python",
+        "code": "a = [1, 2, 3]\nb = a\nb.append(4)\nprint(a)"
+      },
+      "options": [
+        { "language": "python", "code": "[1, 2, 3]" },
+        { "language": "python", "code": "[1, 2, 3, 4]" },
+        { "language": "python", "code": "[4, 1, 2, 3]" },
+        { "language": "python", "code": "Error" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q2",
+      "type": "coding-mcq",
+      "section": "General",
+      "question": "What is the output of the following Python code?",
+      "codeSnippet": {
+        "language": "python",
+        "code": "def func(x=[]):\n    x.append(1)\n    return x\nprint(func())\nprint(func())"
+      },
+      "options": [
+        { "language": "python", "code": "[1]\n[1]" },
+        { "language": "python", "code": "[1]\n[1, 1]" },
+        { "language": "python", "code": "[1, 1]\n[1, 1]" },
+        { "language": "python", "code": "Error" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q3",
+      "type": "coding-mcq",
+      "section": "Python",
+      "question": "What is the output of this Python expression?",
+      "codeSnippet": {
+        "language": "python",
+        "code": "arr = [1, 2, 3, 4]\nprint(arr[::-2])"
+      },
+      "options": [
+        { "language": "python", "code": "[1, 2, 3, 4]" },
+        { "language": "python", "code": "[4, 2]" },
+        { "language": "python", "code": "[3, 1]" },
+        { "language": "python", "code": "[4, 3, 2, 1]" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q4",
+      "type": "coding-mcq",
+      "section": "DSA",
+      "question": "What is the time complexity of the following code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "for (int i = 0; i < n; i++) {\n    for (int j = i; j < n; j++) {\n        cout << i << j;\n    }\n}"
+      },
+      "options": [
+        { "language": "text", "code": "O(n)" },
+        { "language": "text", "code": "O(n log n)" },
+        { "language": "text", "code": "O(n^2)" },
+        { "language": "text", "code": "O(log n)" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q5",
+      "type": "coding-mcq",
+      "section": "DSA",
+      "question": "Which sorting algorithm is generally most suitable for nearly sorted data?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Insertion sort vs Merge sort vs Quick sort vs Heap sort"
+      },
+      "options": [
+        { "language": "text", "code": "Quick Sort" },
+        { "language": "text", "code": "Insertion Sort" },
+        { "language": "text", "code": "Heap Sort" },
+        { "language": "text", "code": "Merge Sort" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q6",
+      "type": "coding-mcq",
+      "section": "DSA",
+      "question": "Which of the following statements about a binary search tree is true?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "BST property"
+      },
+      "options": [
+        { "language": "text", "code": "Left subtree values are greater than the root value" },
+        { "language": "text", "code": "Right subtree values are less than or equal to the root value" },
+        { "language": "text", "code": "Left subtree values are smaller than the root value" },
+        { "language": "text", "code": "BSTs cannot store duplicate values" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q7",
+      "type": "coding-mcq",
+      "section": "DSA",
+      "question": "What is the output of the following C++ code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5;\n    cout << (a++ + ++a) << endl;\n    return 0;\n}"
+      },
+      "options": [
+        { "language": "cpp", "code": "10" },
+        { "language": "cpp", "code": "11" },
+        { "language": "cpp", "code": "12" },
+        { "language": "cpp", "code": "Undefined behavior" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q8",
+      "type": "coding-mcq",
+      "section": "OOPs",
+      "question": "Which of the following best describes runtime polymorphism in C++?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Base { public: virtual void show() {} };\nclass Derived : public Base { public: void show() override {} };"
+      },
+      "options": [
+        { "language": "text", "code": "Function overloading" },
+        { "language": "text", "code": "Function overriding using virtual functions" },
+        { "language": "text", "code": "Operator overloading" },
+        { "language": "text", "code": "Static binding" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q9",
+      "type": "coding-mcq",
+      "section": "OOPs",
+      "question": "Which access specifier makes class members accessible only within the class and derived classes?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class A { protected: int x; };"
+      },
+      "options": [
+        { "language": "text", "code": "public" },
+        { "language": "text", "code": "private" },
+        { "language": "text", "code": "protected" },
+        { "language": "text", "code": "friend" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q10",
+      "type": "coding-mcq",
+      "section": "OOPs",
+      "question": "Which statement is true about a pure virtual function?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Base { public: virtual void run() = 0; };"
+      },
+      "options": [
+        { "language": "text", "code": "It can be called directly without a derived class" },
+        { "language": "text", "code": "It forces a derived class to implement the function" },
+        { "language": "text", "code": "It is automatically inline" },
+        { "language": "text", "code": "It cannot be declared in a base class" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q11",
+      "type": "coding-mcq",
+      "section": "Coding Theory",
+      "question": "Which of the following is a necessary condition for deadlock?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Mutual exclusion + hold and wait + circular wait + no preemption"
+      },
+      "options": [
+        { "language": "text", "code": "Mutual exclusion" },
+        { "language": "text", "code": "Hold and wait" },
+        { "language": "text", "code": "Circular wait" },
+        { "language": "text", "code": "All of the above" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "q12",
+      "type": "coding-mcq",
+      "section": "Coding Theory",
+      "question": "Which CPU scheduling algorithm gives each process a fixed time slice in order?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Round robin scheduling"
+      },
+      "options": [
+        { "language": "text", "code": "FCFS" },
+        { "language": "text", "code": "Round Robin" },
+        { "language": "text", "code": "SJF" },
+        { "language": "text", "code": "Priority Scheduling" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q13",
+      "type": "coding-mcq",
+      "section": "Coding Theory",
+      "question": "Which SQL join returns all rows from the left table and matching rows from the right table?",
+      "codeSnippet": {
+        "language": "sql",
+        "code": "SELECT * FROM A LEFT JOIN B ON A.id = B.id;"
+      },
+      "options": [
+        { "language": "text", "code": "INNER JOIN" },
+        { "language": "text", "code": "LEFT JOIN" },
+        { "language": "text", "code": "RIGHT JOIN" },
+        { "language": "text", "code": "FULL OUTER JOIN" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q14",
+      "type": "coding-mcq",
+      "section": "Coding Theory",
+      "question": "Which network layer protocol is most directly responsible for forwarding packets between different networks?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "IP forwarding"
+      },
+      "options": [
+        { "language": "text", "code": "TCP" },
+        { "language": "text", "code": "UDP" },
+        { "language": "text", "code": "IP" },
+        { "language": "text", "code": "HTTP" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q15",
+      "type": "coding-mcq",
+      "section": "DSA",
+      "question": "Which of the following expressions is the correct midpoint formula to avoid overflow in binary search?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "int low = 0, high = n - 1;\nint mid = low + (high - low) / 2;"
+      },
+      "options": [
+        { "language": "cpp", "code": "mid = (low + high) / 2;" },
+        { "language": "cpp", "code": "mid = low + (high - low) / 2;" },
+        { "language": "cpp", "code": "mid = high - (high - low) / 2;" },
+        { "language": "cpp", "code": "mid = (low * high) / 2;" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q16",
+      "type": "coding-mcq",
+      "section": "DSA",
+      "question": "In a min-heap, what is the property of the root node?",
+      "codeSnippet": {
+        "language": "text",
+        "code": "Min-heap property"
+      },
+      "options": [
+        { "language": "text", "code": "It is the largest element" },
+        { "language": "text", "code": "It is the smallest element" },
+        { "language": "text", "code": "It can be any value" },
+        { "language": "text", "code": "It is equal to the median" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q17",
+      "type": "coding-mcq",
+      "section": "Python",
+      "question": "What is the output of the following Python code?",
+      "codeSnippet": {
+        "language": "python",
+        "code": "x = 10\ny = 20\nprint(x if x > y else y)"
+      },
+      "options": [
+        { "language": "python", "code": "10" },
+        { "language": "python", "code": "20" },
+        { "language": "python", "code": "True" },
+        { "language": "python", "code": "Error" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q18",
+      "type": "mcq",
+      "section": "General",
+      "question": "Which of the following is not an OOP principle?",
+      "options": ["Encapsulation", "Inheritance", "Compilation", "Polymorphism"],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q19",
+      "type": "mcq",
+      "section": "General",
+      "question": "Which of the following best describes Big-O notation?",
+      "options": [
+        "Exact runtime for all inputs",
+        "Worst-case upper bound",
+        "Best-case lower bound",
+        "Average-case memory usage"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q20",
+      "type": "mcq",
+      "section": "General",
+      "question": "Which of the following is true about an abstract class in C++?",
+      "options": [
+        "It cannot contain any methods",
+        "It can be instantiated directly",
+        "It may contain pure virtual functions and cannot be instantiated",
+        "It is always final"
+      ],
+      "correctAnswer": "C"
+    }
+  ]
+}
