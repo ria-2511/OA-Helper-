@@ -1,0 +1,12 @@
+{
+  "assessmentId": "assessment-4",
+  "title": "Assessment 4",
+  "description": "A focused 45-minute quiz covering OOPs in C++ and OS coding MCQs.",
+  "assessmentType": "mcq",
+  "durationMinutes": 45,
+  "isSectionBased": true,
+  "sections": [
+    "OOPs in C++",
+    "OS"
+  ]
+}

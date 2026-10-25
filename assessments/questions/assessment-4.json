@@ -1,0 +1,280 @@
+{
+  "questions": [
+    {
+      "id": "oops-cpp-1",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "What is the output of this C++ code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n};\nint main() { B obj; }"
+      },
+      "options": [
+        { "language": "cpp", "code": "A" },
+        { "language": "cpp", "code": "B" },
+        { "language": "cpp", "code": "AB" },
+        { "language": "cpp", "code": "BA" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "oops-cpp-2",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "Which of the following correctly declares a pure virtual function in C++?",
+      "options": [
+        { "language": "cpp", "code": "virtual void show() = 0;" },
+        { "language": "cpp", "code": "virtual void show();" },
+        { "language": "cpp", "code": "void virtual show() = 0;" },
+        { "language": "cpp", "code": "virtual show() = 0;" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "oops-cpp-3",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "What is the output of this code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\nint main() { Base *ptr = new Derived(); ptr->show(); }"
+      },
+      "options": [
+        { "language": "cpp", "code": "Base" },
+        { "language": "cpp", "code": "Derived" },
+        { "language": "cpp", "code": "Compile error" },
+        { "language": "cpp", "code": "Runtime error" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "oops-cpp-4",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "Which access specifier allows a member to be accessed only within the class and by friends?",
+      "options": [
+        { "language": "cpp", "code": "public" },
+        { "language": "cpp", "code": "private" },
+        { "language": "cpp", "code": "protected" },
+        { "language": "cpp", "code": "friend" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "oops-cpp-5",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "What is the output of the following code?",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "#include <iostream>\nusing namespace std;\nclass Test {\npublic:\n    int x;\n    Test(int a) : x(a) {}\n};\nint main() { Test t(10); cout << t.x; }"
+      },
+      "options": [
+        { "language": "cpp", "code": "10" },
+        { "language": "cpp", "code": "0" },
+        { "language": "cpp", "code": "Garbage value" },
+        { "language": "cpp", "code": "Compile error" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "oops-cpp-6",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "Which keyword is used to prevent a class from being inherited?",
+      "options": [
+        { "language": "cpp", "code": "final" },
+        { "language": "cpp", "code": "static" },
+        { "language": "cpp", "code": "virtual" },
+        { "language": "cpp", "code": "const" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "oops-cpp-7",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "Which of these statements is true about inheritance in C++?",
+      "options": [
+        { "language": "cpp", "code": "Multiple inheritance is not allowed" },
+        { "language": "cpp", "code": "A derived class can inherit from multiple base classes" },
+        { "language": "cpp", "code": "Only one base class can be inherited" },
+        { "language": "cpp", "code": "Inheritance is not supported" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "oops-cpp-8",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "What is the role of a constructor in C++?",
+      "options": [
+        { "language": "cpp", "code": "To destroy an object" },
+        { "language": "cpp", "code": "To initialize an object" },
+        { "language": "cpp", "code": "To copy a file" },
+        { "language": "cpp", "code": "To allocate stack memory" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "oops-cpp-9",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "Identify the error in the following code.",
+      "codeSnippet": {
+        "language": "cpp",
+        "code": "class Base {\npublic:\n    int x;\n};\nclass Derived : public Base {\npublic:\n    void setX(int value) { x = value; }\n};\nint main() { Derived d; d.setX(5); }"
+      },
+      "options": [
+        { "language": "cpp", "code": "No error" },
+        { "language": "cpp", "code": "x is private in Base" },
+        { "language": "cpp", "code": "Derived cannot access x" },
+        { "language": "cpp", "code": "setX cannot be defined in Derived" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "oops-cpp-10",
+      "type": "coding-mcq",
+      "section": "OOPs in C++",
+      "question": "Which of the following is a correct example of function overloading?",
+      "options": [
+        { "language": "cpp", "code": "int add(int a, int b); double add(double a, double b);" },
+        { "language": "cpp", "code": "int add(int a, int b); int add(int a, int b) { return a + b; }" },
+        { "language": "cpp", "code": "int add(int a, int b); int add(int a) { return a; }" },
+        { "language": "cpp", "code": "int add(int a, int b); void add(int a, int b);" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "os-1",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "Which process state is entered when a process is waiting for an I/O event?",
+      "options": [
+        { "language": "text", "code": "Running" },
+        { "language": "text", "code": "Ready" },
+        { "language": "text", "code": "Blocked" },
+        { "language": "text", "code": "New" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "os-2",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "Which scheduling algorithm is based on the shortest burst time?",
+      "options": [
+        { "language": "text", "code": "FCFS" },
+        { "language": "text", "code": "SJF" },
+        { "language": "text", "code": "Round Robin" },
+        { "language": "text", "code": "Priority" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "os-3",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "Which of the following is required for deadlock to occur?",
+      "options": [
+        { "language": "text", "code": "Mutual exclusion" },
+        { "language": "text", "code": "Circular wait" },
+        { "language": "text", "code": "Hold and wait" },
+        { "language": "text", "code": "All of the above" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "os-4",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "Paging divides memory into ______ blocks.",
+      "options": [
+        { "language": "text", "code": "Variable-sized" },
+        { "language": "text", "code": "Fixed-sized" },
+        { "language": "text", "code": "Stack-sized" },
+        { "language": "text", "code": "Logical" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "os-5",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "A semaphore is primarily used for:",
+      "options": [
+        { "language": "text", "code": "Memory allocation" },
+        { "language": "text", "code": "Process synchronization" },
+        { "language": "text", "code": "Disk formatting" },
+        { "language": "text", "code": "File compression" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "os-6",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "Which CPU scheduling algorithm gives each process a fixed time quantum?",
+      "options": [
+        { "language": "text", "code": "FCFS" },
+        { "language": "text", "code": "SJF" },
+        { "language": "text", "code": "Round Robin" },
+        { "language": "text", "code": "Priority Scheduling" }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": "os-7",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "Which of the following is a condition for a deadlock?",
+      "options": [
+        { "language": "text", "code": "No preemption" },
+        { "language": "text", "code": "Circular wait" },
+        { "language": "text", "code": "Mutual exclusion" },
+        { "language": "text", "code": "All of the above" }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": "os-8",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "What is the purpose of a page table in virtual memory?",
+      "options": [
+        { "language": "text", "code": "To track mapping between logical and physical addresses" },
+        { "language": "text", "code": "To manage CPU registers" },
+        { "language": "text", "code": "To store file contents" },
+        { "language": "text", "code": "To schedule I/O devices" }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": "os-9",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "Which state indicates the process is ready to run but waiting for CPU?",
+      "options": [
+        { "language": "text", "code": "Blocked" },
+        { "language": "text", "code": "Ready" },
+        { "language": "text", "code": "Running" },
+        { "language": "text", "code": "Terminated" }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": "os-10",
+      "type": "coding-mcq",
+      "section": "OS",
+      "question": "Which of the following is an example of a preemptive scheduling algorithm?",
+      "options": [
+        { "language": "text", "code": "FCFS" },
+        { "language": "text", "code": "Round Robin" },
+        { "language": "text", "code": "SJF without preemption" },
+        { "language": "text", "code": "Priority non-preemptive" }
+      ],
+      "correctAnswer": "B"
+    }
+  ]
+}
